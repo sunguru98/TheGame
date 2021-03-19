@@ -49,8 +49,7 @@ export const SetupAvailability: React.FC<SetupAvailabilityProps> = ({
     });
 
     if (error) {
-      // eslint-disable-next-line no-console
-      console.warn(error);
+      console.warn(error); // eslint-disable-line no-console
       toast({
         title: 'Error',
         description: 'Unable to update availability. The octo is sad 😢',
